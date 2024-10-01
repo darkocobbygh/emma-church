@@ -1,15 +1,15 @@
 // src/components/Navbar.js
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+ //import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+//  const [isOpen, setIsOpen] = useState(false);
+/**
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
+ */
   return (
     <nav className="flex lg:justify-between lg:pt-6 lg:pl-36 lg:pr-36 bg-black lg:pb-8">
       <Link to={'/'} className='text-white'>Logo</Link>

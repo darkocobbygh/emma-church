@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from 'react-icons/ci';
-import { FaRegCalendarAlt } from 'react-icons/fa';
+// import { FaRegCalendarAlt } from 'react-icons/fa';
 const Contact = () => {
   return (
     <div className='bg-black h-screen'>

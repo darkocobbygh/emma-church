@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -8,9 +8,10 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 const App = () => {
-  const backgroundImageStyle = {
+/**  const backgroundImageStyle = {
     backgroundImage: "url('/assets/pexels-joshsorenson-976866.jpg')",
   };
+   */
   return (
    
       <div className="flex flex-col min-h-screen">
