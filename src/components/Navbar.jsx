@@ -19,18 +19,18 @@ const Navbar = () => {
       <div className="lg:hidden cursor-pointer transition-transform duration-300" onClick={toggleNavbar}>
         {isOpen ? <FaTimes className="text-white transition-opacity duration-300" size={24} /> : <FaBars className="text-white transition-opacity duration-300" size={24} />}
       </div>
-      <ul className={`flex flex-col lg:flex-row gap-6 text-white ${isOpen ? 'absolute bg-black top-16 left-0 w-full' : 'hidden lg:flex'}`}>
-        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold lg:text-2xl'>
+      <ul className={`flex flex-col lg:flex-row lg:gap-6 lg:h-20 h-full gap-12 items-center justify-center lg:justify-start lg:items-start lg:pt-0 pt-10 text-white ${isOpen ? 'absolute bg-black top-16 left-0 w-full' : 'hidden lg:flex'}`}>
+        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold font-bold text-5xl lg:text-2xl'>
           <Link onClick={handleLinkClick} to={'/'}>Home</Link>
         </li>
-        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold lg:text-2xl'>
+        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold font-bold text-5xl lg:text-2xl'>
           <Link onClick={handleLinkClick} to={'about'}>About</Link>
         </li>
-        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-40 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold lg:text-2xl'>
+        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-40 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold font-bold text-5xl lg:text-2xl'>
           <Link onClick={handleLinkClick} to={'contact'}>Contact</Link>
         </li>
-        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold lg:text-2xl'>
-          <Link onClick={handleLinkClick} to={'medias'}>Media</Link>
+        <li className='hover:bg-red-500 lg:hover:h-10 lg:hover:w-24 ease-in duration-300 text-center rounded-2xl lg:hover:font-bold font-bold text-5xl lg:text-2xl'>
+          <Link to={'medias'}>Media</Link>
         </li>
         <li>
           <Link></Link>
