@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Medias from './pages/Medias';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
+  const backgroundImageStyle = {
+    backgroundImage: "url('/assets/pexels-joshsorenson-976866.jpg')",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+      <div className="flex flex-col min-h-screen">
+        <Navbar></Navbar>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/medias' element={<Medias/>}/>
+        </Routes>
+        <Footer/>
+      </div>
   );
-}
+};
 
 export default App;
