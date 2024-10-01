@@ -1,48 +1,33 @@
 @keyframes slide {
   0% {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-joshsorenson-976866.jpg');
-      background-size: cover; /* Ensure it covers the area */
-      background-position: center; /* Center the image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-joshsorenson-976866.jpg');
   }
   33% {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-shelaghmurphy-1666816.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-shelaghmurphy-1666816.jpg');
   }
   66% {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-yetiismyname-971515.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-yetiismyname-971515.jpg');
   }
   100% {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/public/assets/edward-cisneros-QSa-uv4WJ0k-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/public/assets/edward-cisneros-QSa-uv4WJ0k-unsplash.jpg');
   }
 }
 
 .background-slider {
   animation: slide 50s ease-in infinite;
-  -webkit-animation: slide 50s ease-in infinite; /* Safari */
   transition: background-image 1s ease-in;
-  background-size: cover; /* Ensure it covers the area */
+  background-size: cover; /* Ensure images cover the area */
   background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
   background-color: #000; /* Fallback color */
 }
 
 /* Mobile view adjustments */
 @media (max-width: 640px) {
   .background-slider {
-      background-size: cover; /* Ensure images cover the area */
-      background-position: center; /* Center the background image */
-  }
-
-  @keyframes slide {
-      0% {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-joshsorenson-976866.jpg');
-      }
-      33% {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-shelaghmurphy-1666816.jpg');
-      }
-      66% {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/assets/pexels-yetiismyname-971515.jpg');
-      }
-      100% {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/public/assets/edward-cisneros-QSa-uv4WJ0k-unsplash.jpg');
-      }
+    /* Keep these properties the same for consistency */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
