@@ -15,7 +15,7 @@ const App = () => {
   return (
    
       <div className="flex flex-col min-h-screen">
-        <Navbar></Navbar>
+        <Navbar className="h-screen" ></Navbar>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
